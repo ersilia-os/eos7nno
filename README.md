@@ -1,6 +1,6 @@
-# Development of Robust Quantitative Structure-Activity Relationship Models for CYP2D6 Catalysis and Inhibition
+# CYP2D6 Metabolism
 
-Analysis of metabolic stability, determining the inhibition of CYP450 activity and whether the compounds are a substrate for the CYP450 enzyme using specifically CYP2D6. The data to build these models is publicly available at PubChem, AID1645840, AID1645841, AID1645842
+Analysis of metabolic stability, determining the inhibition of CYP2D6 activity and whether the compounds are a substrate for the CYP2D6 enzyme. The data to build these models has been publicly available at PubChem (AID1645840, AID1645841, AID1645842) by ADME@NCATS
 
 ## Identifiers
 
