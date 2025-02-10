@@ -1,0 +1,3 @@
+name,type,direction,description
+CYP2D6_inhib,float,high,Probability of inhibition of the CYP2D6
+CYP2D6_subs,float,high,Probability of being metabolized by CYP2D6
