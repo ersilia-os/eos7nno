@@ -1,45 +1,80 @@
-# CYP2D6 Metabolism
+# CYP2D6 metabolism
 
 Analysis of metabolic stability, determining the inhibition of CYP2D6 activity and whether the compounds are a substrate for the CYP2D6 enzyme. The data to build these models has been publicly available at PubChem (AID1645840, AID1645841, AID1645842) by ADME@NCATS
 
-## Identifiers
+This model was incorporated on 2023-07-06.
 
-* EOS model ID: `eos7nno`
-* Slug: `ncats-cyp2d6`
+## Information
+### Identifiers
+- **Ersilia Identifier:** `eos7nno`
+- **Slug:** `ncats-cyp2d6`
 
-## Characteristics
+### Domain
+- **Task:** `Annotation`
+- **Subtask:** `Activity prediction`
+- **Biomedical Area:** `ADMET`
+- **Target Organism:** `Not Applicable`
+- **Tags:** `CYP450`, `ADME`, `Metabolism`
 
-* Input: `Compound`
-* Input Shape: `Single`
-* Task: `Classification`
-* Output: `Probability`
-* Output Type: `Float`
-* Output Shape: `List`
-* Interpretation: Probability of inhibiting the enzyme and probability of being a ubstrate of the enzyme. Activity in both indicates the compound is a ligand of the enzyme.
+### Input
+- **Input:** `Compound`
+- **Input Dimension:** `1`
 
-## References
+### Output
+- **Output Dimension:** `2`
+- **Output Consistency:** `Fixed`
+- **Interpretation:** Probability of inhibiting the enzyme and probability of being a ubstrate of the enzyme. Activity in both indicates the compound is a ligand of the enzyme.
 
-* [Publication](https://dmd.aspetjournals.org/content/49/9/822)
-* [Source Code](https://github.com/ncats/ncats-adme)
-* Ersilia contributor: [ZakiaYahya](https://github.com/ZakiaYahya)
+Below are the **Output Columns** of the model:
+| Name | Type | Direction | Description |
+|------|------|-----------|-------------|
+| cyp2d6_inhib | float | high | Probability of inhibition of the CYP2D6 |
+| cyp2d6_subs | float | high | Probability of being metabolized by CYP2D6 |
 
-## Ersilia model URLs
-* [GitHub](https://github.com/ersilia-os/eos7nno)
-* [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos7nno) (AMD64, ARM64)
 
-## Citation
+### Source and Deployment
+- **Source:** `Local`
+- **Source Type:** `External`
+- **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7nno](https://hub.docker.com/r/ersiliaos/eos7nno)
+- **Docker Architecture:** `AMD64`, `ARM64`
+- **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip)
 
-If you use this model, please cite the [original authors](https://dmd.aspetjournals.org/content/49/9/822) of the model and the [Ersilia Model Hub](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff).
+### Resource Consumption
 
-## License
 
-This package is licensed under a GPL-3.0 license. The model contained within this package is licensed under a None license.
+### References
+- **Source Code**: [https://github.com/ncats/ncats-adme](https://github.com/ncats/ncats-adme)
+- **Publication**: [https://dmd.aspetjournals.org/content/49/9/822](https://dmd.aspetjournals.org/content/49/9/822)
+- **Publication Type:** `Peer reviewed`
+- **Publication Year:** `2021`
+- **Ersilia Contributor:** [ZakiaYahya](https://github.com/ZakiaYahya)
 
-Notice: Ersilia grants access to these models 'as is' provided by the original authors, please refer to the original code repository and/or publication if you use the model in your research.
+### License
+This package is licensed under a [GPL-3.0](https://github.com/ersilia-os/ersilia/blob/master/LICENSE) license. The model contained within this package is licensed under a [None](LICENSE) license.
 
-## About Us
+**Notice**: Ersilia grants access to models _as is_, directly from the original authors, please refer to the original code repository and/or publication if you use the model in your research.
 
-The [Ersilia Open Source Initiative](https://ersilia.io) is a Non Profit Organization ([1192266](https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/5170657/full-print)) with the mission is to equip labs, universities and clinics in LMIC with AI/ML tools for infectious disease research.
 
-[Help us](https://www.ersilia.io/donate) achieve our mission!
+## Use
+To use this model locally, you need to have the [Ersilia CLI](https://github.com/ersilia-os/ersilia) installed.
+The model can be **fetched** using the following command:
+```bash
+# fetch model from the Ersilia Model Hub
+ersilia fetch eos7nno
+```
+Then, you can **serve**, **run** and **close** the model as follows:
+```bash
+# serve the model
+ersilia serve eos7nno
+# generate an example file
+ersilia example -n 3 -f my_input.csv
+# run the model
+ersilia run -i my_input.csv -o my_output.csv
+# close the model
+ersilia close
+```
+
+## About Ersilia
+The [Ersilia Open Source Initiative](https://ersilia.io) is a tech non-profit organization fueling sustainable research in the Global South.
+Please [cite](https://github.com/ersilia-os/ersilia/blob/master/CITATION.cff) the Ersilia Model Hub if you've found this model to be useful. Always [let us know](https://github.com/ersilia-os/ersilia/issues) if you experience any issues while trying to run it.
+If you want to contribute to our mission, consider [donating](https://www.ersilia.io/donate) to Ersilia!
