@@ -41,10 +41,13 @@
     "Incorporation Date": "2023-07-06",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7nno",
-    "Docker Architecture": [
-        "AMD64",
-        "ARM64"
-    ],
+    "Docker Architecture": "AMD64",
     "Model Size": 2082.0,
-    "Environment Size": 2447.0
+    "Environment Size": 2447.0,
+    "Image Size": 6218.58,
+    "Computational Performance 1": 46.4,
+    "Computational Performance 2": 36.62,
+    "Computational Performance 3": 39.07,
+    "Computational Performance 4": 246.55,
+    "Computational Performance 5": 1187.71
 }
