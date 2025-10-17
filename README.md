@@ -2,8 +2,7 @@
 
 Analysis of metabolic stability, determining the inhibition of CYP2D6 activity and whether the compounds are a substrate for the CYP2D6 enzyme. The data to build these models has been publicly available at PubChem (AID1645840, AID1645841, AID1645842) by ADME@NCATS
 
-This model was incorporated on 2023-07-06.
-
+This model was incorporated on 2023-07-06.Last packaged on 2025-10-17.
 
 ## Information
 ### Identifiers
@@ -37,18 +36,18 @@ Below are the **Output Columns** of the model:
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7nno](https://hub.docker.com/r/ersiliaos/eos7nno)
-- **Docker Architecture:** `AMD64`
+- **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `2082`
 - **Environment Size (Mb):** `2460`
-- **Image Size (Mb):** `6218.58`
+- **Image Size (Mb):** `6300.95`
 
 **Computational Performance (seconds):**
-- 10 inputs: `46.4`
-- 100 inputs: `39.07`
-- 10000 inputs: `1187.71`
+- 10 inputs: `33.65`
+- 100 inputs: `23.92`
+- 10000 inputs: `364.05`
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme](https://github.com/ncats/ncats-adme)
