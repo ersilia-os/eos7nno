@@ -39,15 +39,20 @@
     "License": "None",
     "Contributor": "ZakiaYahya",
     "Incorporation Date": "2023-07-06",
+    "Last Packaging Date": "2025-10-17",
+    "Release": "v1.0.0",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7nno",
-    "Docker Architecture": "AMD64",
+    "Docker Architecture": [
+        "AMD64",
+        "ARM64"
+    ],
     "Model Size": 2082.0,
     "Environment Size": 2460.0,
-    "Image Size": 6218.58,
-    "Computational Performance 1": 46.4,
-    "Computational Performance 2": 36.62,
-    "Computational Performance 3": 39.07,
-    "Computational Performance 4": 246.55,
-    "Computational Performance 5": 1187.71
+    "Image Size": 6300.95,
+    "Computational Performance 1": 33.65,
+    "Computational Performance 2": 23.18,
+    "Computational Performance 3": 23.92,
+    "Computational Performance 4": 86.68,
+    "Computational Performance 5": 364.05
 }
