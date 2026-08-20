@@ -1,6 +1,6 @@
 # CYP2D6 metabolism
 
-Analysis of metabolic stability, determining the inhibition of CYP2D6 activity and whether the compounds are a substrate for the CYP2D6 enzyme. The data to build these models has been publicly available at PubChem (AID1645840, AID1645841, AID1645842) by ADME@NCATS
+Predicts both inhibition of cytochrome P450 2D6 and whether a molecule serves as its substrate. CYP2D6 is among the most strongly polymorphic drug-metabolising enzymes, and compounds cleared predominantly through it show pronounced inter-individual variability. The models come from an NCATS study that built QSAR predictors for catalysis and inhibition across CYP2C9, 2D6 and 3A4, aiming to flag isoform reliance early rather than after microsomal screening. Predictions describe enzyme interaction, not overall clearance.
 
 This model was incorporated on 2023-07-06.Last packaged on 2025-10-17.
 
@@ -13,7 +13,7 @@ This model was incorporated on 2023-07-06.Last packaged on 2025-10-17.
 - **Task:** `Annotation`
 - **Subtask:** `Activity prediction`
 - **Biomedical Area:** `ADMET`
-- **Target Organism:** `Any`
+- **Target Organism:** `Homo sapiens`
 - **Tags:** `CYP450`, `ADME`, `Metabolism`
 
 ### Input
@@ -23,7 +23,7 @@ This model was incorporated on 2023-07-06.Last packaged on 2025-10-17.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting the enzyme and probability of being a ubstrate of the enzyme. Activity in both indicates the compound is a ligand of the enzyme.
+- **Interpretation:** Probability of inhibiting CYP2D6 and probability of being a substrate of the enzyme.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
