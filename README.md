@@ -1,6 +1,6 @@
 # CYP2D6 metabolism
 
-Predicts both inhibition of cytochrome P450 2D6 and whether a molecule serves as its substrate. CYP2D6 is among the most strongly polymorphic drug-metabolising enzymes, and compounds cleared predominantly through it show pronounced inter-individual variability. The models come from an NCATS study that built QSAR predictors for catalysis and inhibition across CYP2C9, 2D6 and 3A4, aiming to flag isoform reliance early rather than after microsomal screening. Predictions describe enzyme interaction, not overall clearance.
+Predicts both inhibition of cytochrome P450 2D6 and whether a molecule serves as its substrate. CYP2D6 is among the most strongly polymorphic drug-metabolising enzymes, and compounds cleared predominantly through it show pronounced inter-individual variability. Gonzalez and co-workers paired a 5,000-compound clearance screen with a luminescent inhibition screen across 2C9, 2D6 and 3A4, using the overlap between readouts to assign labels and reaching balanced accuracies near 0.7. A third of the library proved a 2D6 substrate, and predictions describe enzyme interaction, not overall clearance.
 
 This model was incorporated on 2023-07-06.Last packaged on 2025-10-17.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-07-06.Last packaged on 2025-10-17.
 ### Output
 - **Output Dimension:** `2`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Probability of inhibiting CYP2D6 and probability of being a substrate of the enzyme.
+- **Interpretation:** Probability that a compound inhibits CYP2D6 below 10 uM and is cleared within a 30-minute half-life.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
