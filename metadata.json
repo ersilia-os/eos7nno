@@ -40,7 +40,7 @@
     "Contributor": "ZakiaYahya",
     "Incorporation Date": "2023-07-06",
     "Last Packaging Date": "2025-10-17",
-    "Release": "v1.0.0",
+    "Release": "v1.0.1",
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos7nno",
     "Docker Architecture": [
