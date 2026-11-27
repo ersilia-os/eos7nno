@@ -3,7 +3,7 @@
 Predicts both inhibition of cytochrome P450 2D6 and whether a molecule serves as its substrate. CYP2D6 is among the most strongly polymorphic drug-metabolising enzymes, and compounds cleared predominantly through it show pronounced inter-individual variability. Gonzalez and co-workers paired a 5,000-compound clearance screen with a luminescent inhibition screen across 2C9, 2D6 and 3A4, using the overlap between readouts to assign labels and reaching balanced accuracies near 0.7. A third of the library proved a 2D6 substrate, and predictions describe enzyme interaction, not overall clearance.
 
 This model was incorporated on 2023-07-06.
-Last packaged on 2025-10-17.
+Last packaged on 2026-11-27.
 
 ## Information
 ### Identifiers
@@ -43,12 +43,12 @@ Below are the **Output Columns** of the model:
 ### Resource Consumption
 - **Model Size (Mb):** `2082`
 - **Environment Size (Mb):** `2446`
-- **Image Size (Mb):** `6300.95`
+- **Image Size (Mb):** `1377.6`
 
 **Computational Performance (seconds):**
-- 10 inputs: `33.65`
-- 100 inputs: `23.92`
-- 10000 inputs: `364.05`
+- 10 inputs: `28.94`
+- 100 inputs: `19.56`
+- 10000 inputs: `332.08`
 
 ### References
 - **Source Code**: [https://github.com/ncats/ncats-adme](https://github.com/ncats/ncats-adme)
