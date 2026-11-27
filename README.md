@@ -39,6 +39,7 @@ Below are the **Output Columns** of the model:
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos7nno](https://hub.docker.com/r/ersiliaos/eos7nno)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos7nno.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos7nno_v1.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos7nno_v1.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `2082`
